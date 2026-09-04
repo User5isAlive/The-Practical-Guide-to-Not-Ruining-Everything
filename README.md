@@ -15,6 +15,7 @@ The project began as a question: can a person keep continuity, preferences, hist
 - **Engineering method:** [projects/companion-light/v17.1/03_PROCESS.md](projects/companion-light/v17.1/03_PROCESS.md)
 - **Latest implementation delta (v17.2):** [projects/companion-light/v17.2/README.md](projects/companion-light/v17.2/README.md)
 - **Latest defect ledger:** [projects/companion-light/v17.2/DEFECTS.md](projects/companion-light/v17.2/DEFECTS.md)
+- **Who the human is—and is not:** [docs/ABOUT_THE_MONKEY.md](docs/ABOUT_THE_MONKEY.md)
 - **Project history:** [docs/HISTORY.md](docs/HISTORY.md)
 - **Current status and claim discipline:** [docs/STATUS.md](docs/STATUS.md)
 
@@ -40,8 +41,8 @@ The central lesson is simple: a model saying a fix exists is not evidence that t
 
 ```text
 projects/companion-light/   current reference implementation, deltas, and specifications
-docs/                       history, status, and process notes
-archive/                    earlier Memory Alpha material preserved for provenance
+docs/                       history, status, authorship, and process notes
+archive/history/            reader-oriented development history + exact source tranches
 archive/corpus/             historical RAG corpus chunks
 archive/research/           older research/specification artifacts
 archive/media/              historical media artifacts
@@ -49,7 +50,13 @@ archive/media/              historical media artifacts
 
 ### Historical material
 
-Earlier documents are intentionally preserved because the evolution matters. Some contain stronger claims than the current project would make today—for example categorical statements about alignment, FOOM prevention, or legal compliance. They are **historical artifacts, not current guarantees**. See [docs/HISTORY.md](docs/HISTORY.md).
+Earlier documents are intentionally preserved because the evolution matters. Some contain stronger claims than the current project would make today—for example categorical statements about alignment, FOOM prevention, legal compliance, or model-generated performance metrics. They are **historical artifacts, not current guarantees**. See [docs/HISTORY.md](docs/HISTORY.md) and [archive/history/README.md](archive/history/README.md).
+
+### A note on authorship and model write access
+
+This is not the work product of a hidden AI lab or credentialed multidisciplinary research team. The human project owner describes himself, usefully if impolitely, as **“a monkey with a credit card and a computer.”** The archive makes the human/model division of labor explicit.
+
+On **September 4, 2026**, the human deliberately granted connected frontier models write access to this GitHub repository. From that point onward, models could directly create repository artifacts through the GitHub integration when authorized. See [docs/ABOUT_THE_MONKEY.md](docs/ABOUT_THE_MONKEY.md).
 
 ### License intent
 
