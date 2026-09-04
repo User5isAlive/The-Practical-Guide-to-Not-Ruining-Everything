@@ -2,6 +2,34 @@
 
 This is a reconstruction from the repository history and preserved project chats. It is intentionally a **development history**, not a claim that every intermediate idea was correct.
 
+## Phase 0 — December 2025: the unruly notebook
+
+The newly preserved early material makes the prehistory much clearer.
+
+The original seed was not “build an AGI.” It was a practical continuity problem: how do you use a language model over a long arc without making the model itself the place where persistence lives?
+
+Early v2 material already separates human, model, and external memory, but the labels still move: one v2 document calls the human Student A and the LLM Student B; an intermediate file named “v3” is internally still Version 2.0 and flips the labels; the actual v3 document makes Student A the frontier model, Student B the human, and Student C the collaborative voice/process.
+
+From there the project sprawls aggressively:
+
+- external RAG / NULL-cycle reasoning;
+- privacy and GDPR hypotheses;
+- proof-of-presence and attestation ideas;
+- the model-agnostic companion / “village of models”;
+- HOLO-RAG / historical-persona education;
+- creator licensing;
+- data sovereignty and economic ideas;
+- embodied learning and “Everyone Flies”;
+- product/application theses around finite generative experiences.
+
+The v4.1/v4.2 “Sovereign State” branch is particularly useful historically because it puts the ambition and the overreach next to each other. It contains speculative legal, biometric, economic, and enforcement claims; it also begins adding explicit known limitations and verification warnings.
+
+The separate Core Architecture document records an important correction event: an external review objected to “zero chance” FOOM language and the project changed the preferred wording to “structurally minimized.” The same artifact also demonstrates why prose review was not enough: absolute language still leaks elsewhere.
+
+That tension eventually becomes the reason for the Cathedral Method.
+
+Reader copies live in [archive/history/early-designs/](../archive/history/early-designs/). Original source bytes and hashes are preserved in the tranche manifests.
+
 ## Phase 1 — External memory, stateless models
 
 The earliest stable idea was that continuity should live **outside** model weights: a user-controlled RAG/memory layer provides selected state on wake while the model itself remains replaceable and comparatively stateless.
@@ -106,6 +134,14 @@ The repository became the common meeting ground:
 
 That reduces conversational contamination and makes “what actually exists?” answerable by Git rather than memory.
 
+### September 4, 2026 — the models get a pencil
+
+On **2026-09-04**, the human project owner deliberately granted connected frontier models **write access to this GitHub repository**.
+
+That means the repository stops being only a place where a human pastes model output. From this date onward, models can directly create branches, files, commits, and pull requests through the GitHub integration when authorized, and may perform explicitly authorized merges.
+
+This is a provenance milestone, not a transfer of sovereignty. See [ABOUT_THE_MONKEY.md](ABOUT_THE_MONKEY.md).
+
 ## Phase 8 — v17.2: real runtime adapters and bounded candidate search
 
 The next Fable patch replaced local-runtime VERIFY stubs with implementation code written against named upstream source revisions and moved search off the full corpus scan:
@@ -120,12 +156,25 @@ These are still **PATCHED, not VERIFIED**. The ledger continues to record zero s
 
 ## Preserved source history
 
-A later historical tranche was added without rewriting its internal labels or claims. It contains early Memory Alpha readmes, v7.6, two distinct v8 variants, v9/v10/v12 material, v15/v16 suite checksums, the Mistral/Kimi review bundle, v16g.3 and v16g.4 review/correction artifacts, review-bundler tools, the large “V17” upload, the mobile RAG residency paper, and two research-conversation archives.
+Two historical tranches supplied on 2026-09-04 are preserved with hashes rather than silently normalized.
 
-See [archive/history/README.md](../archive/history/README.md) and the exact-byte [2026-09-04 manifest](../archive/history/tranches/2026-09-04/MANIFEST.md).
+The first includes early public readmes, v7.6, two distinct v8 variants, v9/v10/v12 material, v15/v16 suite checksums, the Mistral/Kimi review bundle, v16g.3 and v16g.4 review/correction artifacts, review-bundler tools, the large “V17” upload, the mobile RAG residency paper, and two research-conversation archives.
 
-The two supplied HUNTER PDFs were byte-identical to the HUNTER object already present in `archive/research/`, so they are recorded in the manifest rather than duplicated.
+The second adds the actual **MA-SUITE-2026.15 ZIP**, early v2/v3/v4.1/v4.2 Word documents, the Core Architecture document, Generalization note, platform thesis, and a historical ChatGPT export showing the ersatz-RAG / cross-model experimentation stage. Exact duplicates of tranche one are identified rather than stored twice.
+
+See:
+
+- [archive/history/README.md](../archive/history/README.md)
+- [tranche A manifest](../archive/history/tranches/2026-09-04/MANIFEST.md)
+- [tranche B manifest](../archive/history/tranches/2026-09-04-b/MANIFEST.md)
+- [MA-SUITE-2026.15](../archive/history/releases/MA-SUITE-2026.15/)
+
+The two supplied HUNTER PDFs in tranche A were byte-identical to the HUNTER object already present in `archive/research/`, so they are recorded in the manifest rather than duplicated.
 
 ## Important historical note
 
-Older Memory Alpha material sometimes used categorical language such as “cannot FOOM,” “safe by construction,” or “GDPR compliant by construction.” The current project treats those as **historical hypotheses or aspirations, not established guarantees**. The newer process deliberately replaces confident prose with falsifiable invariants, defect IDs, tests, and explicit unknowns.
+Older Memory Alpha material sometimes used categorical language such as “cannot FOOM,” “safe by construction,” “zero risk,” “GDPR compliant by construction,” or numerical model-performance claims that were produced conversationally rather than measured experimentally.
+
+The current project treats those as **historical hypotheses, rhetoric, or provisional claims—not established guarantees**.
+
+The newer process deliberately replaces confident prose with falsifiable invariants, defect IDs, builds, tests, external evidence, explicit unknowns, and an audit trail showing who or what changed the artifact.
