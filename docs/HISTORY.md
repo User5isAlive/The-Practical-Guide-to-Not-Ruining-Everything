@@ -118,6 +118,14 @@ The next Fable patch replaced local-runtime VERIFY stubs with implementation cod
 
 These are still **PATCHED, not VERIFIED**. The ledger continues to record zero successful builds. The exact supplied bundle/patch lineage and checksums are recorded in [projects/companion-light/v17.2/SOURCE_MANIFEST.md](../projects/companion-light/v17.2/SOURCE_MANIFEST.md).
 
+## Preserved source history
+
+A later historical tranche was added without rewriting its internal labels or claims. It contains early Memory Alpha readmes, v7.6, two distinct v8 variants, v9/v10/v12 material, v15/v16 suite checksums, the Mistral/Kimi review bundle, v16g.3 and v16g.4 review/correction artifacts, review-bundler tools, the large “V17” upload, the mobile RAG residency paper, and two research-conversation archives.
+
+See [archive/history/README.md](../archive/history/README.md) and the exact-byte [2026-09-04 manifest](../archive/history/tranches/2026-09-04/MANIFEST.md).
+
+The two supplied HUNTER PDFs were byte-identical to the HUNTER object already present in `archive/research/`, so they are recorded in the manifest rather than duplicated.
+
 ## Important historical note
 
 Older Memory Alpha material sometimes used categorical language such as “cannot FOOM,” “safe by construction,” or “GDPR compliant by construction.” The current project treats those as **historical hypotheses or aspirations, not established guarantees**. The newer process deliberately replaces confident prose with falsifiable invariants, defect IDs, tests, and explicit unknowns.
