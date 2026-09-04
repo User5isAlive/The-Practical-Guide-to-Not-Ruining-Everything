@@ -96,15 +96,27 @@ See [projects/companion-light/v17.1/03_PROCESS.md](../projects/companion-light/v
 
 ## Phase 7 — GitHub as the committee sandbox
 
-The next process step is to make the repository itself the common meeting ground:
+The repository became the common meeting ground:
 
-- models review the same commit rather than each other's summaries;
+- models can review the same commit rather than each other's summaries;
 - proposed changes arrive as branches/diffs;
 - defects persist in the ledger;
 - build/test logs can be attached to the commit or pull request;
 - independent reviewers can compare against the same artifact.
 
 That reduces conversational contamination and makes “what actually exists?” answerable by Git rather than memory.
+
+## Phase 8 — v17.2: real runtime adapters and bounded candidate search
+
+The next Fable patch replaced local-runtime VERIFY stubs with implementation code written against named upstream source revisions and moved search off the full corpus scan:
+
+- **CAT-014:** FTS5 (200) plus recent (100) candidate IDs before fetching full objects;
+- **CAT-025:** MLX generation + EmbeddingGemma adapter against `mlx-swift-lm@e3d4a20`;
+- **CAT-026:** LiteRT-LM generation + embedding adapters against `LiteRT-LM@b41b3c3`;
+- **CAT-027:** Apple-only runtime dependencies isolated from Linux-buildable CompanionCore;
+- **CAT-028:** fresh generation session per local role made explicit, preventing Judge KV state from flowing into Voice.
+
+These are still **PATCHED, not VERIFIED**. The ledger continues to record zero successful builds. The exact supplied bundle/patch lineage and checksums are recorded in [projects/companion-light/v17.2/SOURCE_MANIFEST.md](../projects/companion-light/v17.2/SOURCE_MANIFEST.md).
 
 ## Important historical note
 
