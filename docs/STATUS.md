@@ -1,19 +1,26 @@
 # Current status
 
-## Companion Light v17.1
+## Companion Light v17.2
 
 **Research prototype — not production software.**
 
-The current v17.1 documents report:
+v17.2 advances the implementation delta but does not change the verification rule.
 
-- iOS fixes for many CAT-001…018 items are **PATCHED**, meaning a diff exists;
-- **zero successful builds are yet recorded**;
-- Android has not received the v17.1 repair set;
-- local MLX/LiteRT-LM/EmbeddingGemma adapters remain VERIFY stubs;
-- search is still O(N) and is known not to be the final scaling design.
+Current ledger state includes:
 
-The authoritative status is the defect ledger:
-[projects/companion-light/v17.1/DEFECTS.md](../projects/companion-light/v17.1/DEFECTS.md).
+- iOS fixes for many CAT-001…018 items remain **PATCHED**;
+- CAT-014 now has an FTS5 + recency candidate-pool patch rather than an O(N) full-object search, with the semantic-only-hit gap still recorded;
+- CAT-025/026 replace the MLX and LiteRT-LM VERIFY stubs with adapters written against named upstream source commits;
+- CAT-027 isolates Apple-only runtime dependencies from the Linux-buildable core;
+- CAT-028 makes fresh local sessions per role an explicit design decision;
+- Android now has the LiteRT-LM adapter patch, but the broad Android CAT-001…018 repair set is still not complete;
+- **zero successful builds are still recorded**.
+
+The authoritative current ledger is:
+[projects/companion-light/v17.2/DEFECTS.md](../projects/companion-light/v17.2/DEFECTS.md).
+
+The source lineage/checksums for the supplied v17.2 patch, adapters, ledger, and git bundle are recorded in:
+[projects/companion-light/v17.2/SOURCE_MANIFEST.md](../projects/companion-light/v17.2/SOURCE_MANIFEST.md).
 
 ## Claim discipline
 
@@ -39,7 +46,7 @@ At the architectural/specification level, the project has a coherent design for:
 - carrying defects forward across review rounds;
 - using a canonical artifact, diffs, compiler results, and tests to reduce conversational/specification laundering.
 
-At the implementation level, those remain subject to build/test verification and further red-team review.
+At the implementation level, runtime adapters and candidate-pool search are now concrete patches, but they remain subject to compilation, runtime testing, upstream-API verification, and further red-team review.
 
 ## Reading rule
 
