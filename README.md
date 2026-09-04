@@ -10,10 +10,11 @@ The project began as a question: can a person keep continuity, preferences, hist
 
 ### Start here
 
-- **Current architecture:** [projects/companion-light/v17.1/01_FOR_THE_MONKEY.md](projects/companion-light/v17.1/01_FOR_THE_MONKEY.md)
+- **Current architecture (v17.1):** [projects/companion-light/v17.1/01_FOR_THE_MONKEY.md](projects/companion-light/v17.1/01_FOR_THE_MONKEY.md)
 - **Pseudocode:** [projects/companion-light/v17.1/02_PSEUDOCODE.md](projects/companion-light/v17.1/02_PSEUDOCODE.md)
 - **Engineering method:** [projects/companion-light/v17.1/03_PROCESS.md](projects/companion-light/v17.1/03_PROCESS.md)
-- **Defect ledger:** [projects/companion-light/v17.1/DEFECTS.md](projects/companion-light/v17.1/DEFECTS.md)
+- **Latest implementation delta (v17.2):** [projects/companion-light/v17.2/README.md](projects/companion-light/v17.2/README.md)
+- **Latest defect ledger:** [projects/companion-light/v17.2/DEFECTS.md](projects/companion-light/v17.2/DEFECTS.md)
 - **Project history:** [docs/HISTORY.md](docs/HISTORY.md)
 - **Current status and claim discipline:** [docs/STATUS.md](docs/STATUS.md)
 
@@ -38,7 +39,7 @@ The central lesson is simple: a model saying a fix exists is not evidence that t
 ### Repository map
 
 ```text
-projects/companion-light/   current reference implementation and specifications
+projects/companion-light/   current reference implementation, deltas, and specifications
 docs/                       history, status, and process notes
 archive/                    earlier Memory Alpha material preserved for provenance
 archive/corpus/             historical RAG corpus chunks
