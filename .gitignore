@@ -1,0 +1,17 @@
+# Local working memory and credentials are not source artifacts.
+private/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.build/
+.swiftpm/
+.DS_Store

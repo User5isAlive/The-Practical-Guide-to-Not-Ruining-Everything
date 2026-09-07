@@ -1,0 +1,10 @@
+{
+  "schema": "ma-corpus-v1",
+  "conversations": [{
+    "id": "demo-campaign",
+    "messages": [
+      {"id": "1", "role": "user", "text": "Aeliana borrowed 12 silver from the blacksmith. The bridge is closed until dawn."},
+      {"id": "2", "role": "assistant", "text": "The blacksmith asks Aeliana to return after sunrise. This is narrated campaign history, not a real-world fact."}
+    ]
+  }]
+}

@@ -1,0 +1,107 @@
+{
+  "source_archive": "companion_light_mobile_v17_1(1).zip",
+  "source_sha256": "d8de6c42280142186878ae8575a2705f03f81bc692e13ee1dc88c6c5b5a32e6f",
+  "status": "restored verbatim; not build-verified",
+  "files": [
+    {
+      "path": "android/app/build.gradle.kts",
+      "sha256": "c39a83a31bbc030412f77f5ada653efbd35e56a4315c2f78184147a1ad594054",
+      "bytes": 952
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/adapters/FrontierHttp.kt",
+      "sha256": "5d24c00912548477edcfb93338579090e6e0e08be8a0d2a6fbb530ab21fa4025",
+      "bytes": 3242
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/adapters/LocalRuntime.kt",
+      "sha256": "0b70383c453a005b763eafbdbca50fb2edd2b8ab4096a1b288daa580edbd0b4e",
+      "bytes": 1484
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/core/Librarian.kt",
+      "sha256": "fad30bf56f16dcb02eb33518c3e76e828840b64f369d72903817799ab709c2bc",
+      "bytes": 8952
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/core/Persona.kt",
+      "sha256": "e9c7f998ebd2cec1d3c7423b5a46443a0a3db88b0cfc3c9630d0b012bd10ab13",
+      "bytes": 6740
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/core/Vault.kt",
+      "sha256": "6f6c596a6241c5804542a3fe8ebad23ab1776c18dacd616b31d51b8606996fa4",
+      "bytes": 10942
+    },
+    {
+      "path": "android/app/src/main/java/org/memoryalpha/companion/ui/ChatScreen.kt",
+      "sha256": "8164076efab57c030c900e8ab721676137c1170846770758df5dba9184d3bf2b",
+      "bytes": 2547
+    },
+    {
+      "path": "ios/CompanionLight/Package.swift",
+      "sha256": "2085fe4f9128febfd9c847daed736c473cd20f513561b1e395850d51207de285",
+      "bytes": 1039
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CSQLite/module.modulemap",
+      "sha256": "bbfe59a972a3e8e09e347c04bc22c0eacd2544881af8a4b6068bfc30b38466e8",
+      "bytes": 80
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CSQLite/shim.h",
+      "sha256": "b052d8e561e942f97b503033ecd2eaa2b35213bdbf374983efe9e68eabdfc024",
+      "bytes": 21
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionApp/ChatView.swift",
+      "sha256": "ab54b750bdf5b14116a32aa18dd6f5d1ea2a0b94b846b092e0fba3c431002357",
+      "bytes": 3958
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Adapters/FrontierHTTP.swift",
+      "sha256": "3c31ed69d4b0f78a5fbe8024c90ff5d95397c8026760bb32f0481771bd83a35b",
+      "bytes": 3653
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Adapters/MLXRuntime.swift",
+      "sha256": "0bcb80383c4d4e84bb7fbb291e461d2d52810debbefda5d736aa33f50a1edaab",
+      "bytes": 1875
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Librarian.swift",
+      "sha256": "3e949e3fd2058aed175a6fab5f2ebdae974c97903724bf37ed2c2eb06ee0ee32",
+      "bytes": 8831
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Persona.swift",
+      "sha256": "b9d73b45e58f33e223150bc6477a52f0e633c8cc7ade9b8cf58adbfd88699257",
+      "bytes": 11808
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Platform.swift",
+      "sha256": "92bb51a73ad54f02b976580eaeed8a2dd2d0c6508730400a38448c497e772e9f",
+      "bytes": 275
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Sliders.swift",
+      "sha256": "5453900f5bcf352ef05e2389193bc294f450b86a4129d9f5986630bb200bad2f",
+      "bytes": 2824
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Trust.swift",
+      "sha256": "3517ced6083cba344a3a4fbfc6532775d5f34333c3a6dfbf6696ee41a05b6f20",
+      "bytes": 1162
+    },
+    {
+      "path": "ios/CompanionLight/Sources/CompanionCore/Vault.swift",
+      "sha256": "5e69cb21d99819e6f38b96f2e61ef1067a957f0043b479d6334d811d8c91e203",
+      "bytes": 18868
+    },
+    {
+      "path": "ios/CompanionLight/Tests/CompanionCoreTests/CoreTests.swift",
+      "sha256": "ddbc463b02f4cb86397353405beec59ab20ec89565e6b6eb69f101c089341a34",
+      "bytes": 7944
+    }
+  ]
+}

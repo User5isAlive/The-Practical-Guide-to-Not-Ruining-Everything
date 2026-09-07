@@ -2,6 +2,10 @@
 
 This is a reconstruction from the repository history and preserved project chats. It is intentionally a **development history**, not a claim that every intermediate idea was correct.
 
+## Origin — A solo campaign
+
+The owner clarified on 2026-09-07 that the initiating problem was solo D&D with an LLM game master: retaining narrative, obligations, and world state across sessions. Conversation exports and a chunker became a project corpus; that continuity experiment broadened into Memory Alpha. This is owner-reported development history, not a measured capability claim.
+
 ## Phase 1 — External memory, stateless models
 
 The earliest stable idea was that continuity should live **outside** model weights: a user-controlled RAG/memory layer provides selected state on wake while the model itself remains replaceable and comparatively stateless.
