@@ -33,3 +33,15 @@ Layer: THEOREM / PSEUDO / CODE / TEST / SECURITY / PERF / PROCESS. Status: OPEN 
 | CAT-026 | CODE | ios/…/CompanionRuntimes/LiteRTRuntime.swift · android/…/adapters/LocalRuntime.kt | VERIFY stubs replaced | Same file (.litertlm) both platforms | Fable | PATCHED — against google-ai-edge/LiteRT-LM@b41b3c3: Engine/EngineConfig/ConversationConfig/SamplerConfig/Message, EmbeddingEngine. Not compiled. | PATCHED (same) |
 | CAT-027 | PROCESS | Package.swift | Apple-only deps would break the Linux build | Core stays Linux-buildable | Fable | PATCHED — CompanionRuntimes is a separate target with platform conditions; Linux CI builds CompanionCore only | — |
 | CAT-028 | THEOREM | Persona (both) | Each role opens a fresh session; no KV cache carries Judge into Voice | Null-state reset is an immune property (MA inv. 1) | Fable | Design decision made explicit in adapters. Cost: prefill twice per turn. Owner may revisit for battery. | — |
+
+## Repository review — 2026-09-07
+
+New IDs begin at CAT-046 to avoid colliding with out-of-band CAT-029…045 work;
+this does not certify the existence or completion of those intermediate items.
+
+| ID | Layer | Location | Finding and disposition | Status |
+|---|---|---|---|---|
+| CAT-046 | PROCESS | public main / mobile tree | Full source absent. Restored 20 v17.1 source files with archive/per-file digests. Native build remains unverified; v17.2 core still absent. | PATCHED |
+| CAT-047 | CODE/TEST | tools/corpus.py | Added non-authoritative corpus staging, deduplication, revisions, branch selection and FTS receipts. Synthetic local tests pass; no mobile integration claimed. | VERIFIED for named corpus tests only |
+| CAT-048 | THEOREM | docs/TRUST_PROFILES.md | Suite/mobile T-label meanings conflict. Compatibility documented; no automatic conversion implemented. | OPEN — migration policy |
+| CAT-049 | SECURITY | v17.1 Vault.init / objects.text | Ephemeral default wrapping key is not durable custody; materialized text remains plaintext. Source restored without disguising these defects as fixed. | OPEN |

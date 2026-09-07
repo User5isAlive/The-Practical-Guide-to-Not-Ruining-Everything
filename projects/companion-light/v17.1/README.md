@@ -23,3 +23,7 @@ Model adapters remain `VERIFY` stubs. `HashEmbedder` stands in.
 Disk tamper via a second SQLite connection · provenance tamper · signature replay · shred keeps chain, loses text · promotion keeps T3 at T3 and needs presence · activation with exact mean · orphan/rehydrate twice with df and embedding intact · stable fallback hash · evidence vs context planes · fence carries trust, not text · routing is deterministic and fail-closed.
 
 To run on Linux: `apt install libsqlite3-dev && swift test`. If it fails at an import, that is CAT-017 reopening, and the log is the deliverable.
+
+## Source restoration — 2026-09-07
+
+The `ios/` and `android/` trees are restored verbatim from the supplied v17.1 ZIP; `RESTORED_SOURCE.json` records their digests. They remain uncompiled historical implementation, including known defects and runtime stubs. See the [current engineering review](../../../docs/ENGINEERING_REVIEW_2026-09-07.md).

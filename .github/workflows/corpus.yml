@@ -1,0 +1,15 @@
+name: Corpus invariants
+on:
+  push:
+    paths: ['tools/**', 'tests/**', 'examples/**', '.github/workflows/corpus.yml']
+  pull_request:
+    paths: ['tools/**', 'tests/**', 'examples/**', '.github/workflows/corpus.yml']
+permissions:
+  contents: read
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run synthetic corpus invariants
+        run: python3 -m unittest discover -s tests -v

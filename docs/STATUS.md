@@ -1,5 +1,9 @@
 # Current status
 
+## Repository update — 2026-09-07
+
+The full v17.1 mobile source/tests are now restored with exact-byte provenance. The v17.2 core/patch referenced by the manifest is still absent; only its recorded delta artifacts are available. A new, separate Python corpus staging/search utility has passing synthetic local tests and a CI workflow. This does **not** change the native build status below. See [engineering review](ENGINEERING_REVIEW_2026-09-07.md) and [corpus instructions](CORPUS.md).
+
 ## Companion Light v17.2
 
 **Research prototype — not production software.**
